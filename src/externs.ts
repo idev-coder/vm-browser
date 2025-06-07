@@ -1,10 +1,12 @@
 var global: any = {};
 var process: {
+    hrtime: any;
     versions: { [key: string]: string | undefined };
     env: { [key: string]: string | undefined; NODE_ENV?: "development" | "production" | "test" | undefined; DEBUG?: string | undefined; };
 } = {
     versions: {},
-    env: {}
+    env: {},
+    hrtime: []
 };
 
 /**

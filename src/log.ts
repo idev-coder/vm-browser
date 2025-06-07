@@ -91,7 +91,7 @@ export const dbg_log = (function () {
 /**
  * @param {number=} level
  */
-export function dbg_trace(level: number) {
+export function dbg_trace(level?: number) {
     if (!DEBUG) return;
 
     dbg_log(Error().stack || "", level);
